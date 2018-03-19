@@ -42,7 +42,8 @@ If you have installed the openalpr in home directory copy using following comman
 sudo cp -r ~/openalpr/runtime_data usr/share/openalpr/runtime_data/ 
 ```
 
-For example, the following output is created by analyzing this image: Plate Image:
+For example, the following output is created by analyzing this image: 
+Plate Image:
 
 ![alt text](https://raw.githubusercontent.com/abhishekworkspace/openalpr_lic/master/car.jpg)
 
