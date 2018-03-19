@@ -31,7 +31,7 @@ User Guide
 
 OpenALPR includes a command line utility. Simply typing "alpr [image file path]" is enough to get started recognizing license plate images. This is a License Plate detector with added support for India using Openalpr library.
 
-Testing for recoignising Indian Number Plates
+Testing for recognising Indian Number Plates
 ------------------------------------------------
 
 After the installing the opensource version of Openalpr, copy the runtime_data directory contaning configuration files, trained data and pattern files for India in the runtime directory :
