@@ -126,15 +126,15 @@ For India you can use the following command:
 
 For recognising the images
 ```
-  alpr -c -in image.jpg
+  alpr -c in image.jpg
 ```
 For recognising the Videos
 ```
-  alpr -c -in video.mp4
+  alpr -c in video.mp4
 ```
  For recognising using webcam
 ```
-  alpr -c -in webcam
+  alpr -c in webcam
 ```
 
 >Check out extra test files under resources folder.
@@ -211,7 +211,7 @@ OpenALPR compiles and runs on Linux, Mac OSX and Windows.
 After cloning this GitHub repository, you should download and extract Tesseract and OpenCV source code into their own directories. Compile both libraries.
 
 Please follow these detailed compilation guides for your respective operating system:
-```
+
 * [Windows](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(Windows))
 * [Ubuntu Linux](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(Ubuntu-Linux))
 * [OS X](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(OS-X))
@@ -220,7 +220,7 @@ Please follow these detailed compilation guides for your respective operating sy
 * [iOS](https://github.com/twelve17/openalpr-ios)###Documentation
 * [iOS React Native](https://github.com/cardash/react-native-openalpr)
 * [Xamarin](https://github.com/kevinjpetersen/openalpr-xamarin)
-```
+
 
 Docker
 ---------
