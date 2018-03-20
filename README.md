@@ -217,7 +217,7 @@ Please follow these detailed compilation guides for your respective operating sy
 * [OS X](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(OS-X))
 * [Android Library](https://github.com/SandroMachado/openalpr-android)
 * [Android Application Sample](https://github.com/sujaybhowmick/OpenAlprDroidApp)
-* [iOS](https://github.com/twelve17/openalpr-ios)###Documentation
+* [iOS](https://github.com/twelve17/openalpr-ios)
 * [iOS React Native](https://github.com/cardash/react-native-openalpr)
 * [Xamarin](https://github.com/kevinjpetersen/openalpr-xamarin)
 
