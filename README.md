@@ -42,7 +42,7 @@ After the installing the opensource version of Openalpr. Clone this openalpr_lic
 
 git clone https://github.com/abhishekworkspace/openalpr_lic
 
-# Copy the contents of this local repository to openalpr directory
+# Copy the contents of this repository to openalpr directory
 
 sudo cp -r openalpr_lic/runtime_data/* /usr/share/openalpr/runtime_data/ 
 ```
