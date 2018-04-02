@@ -6,7 +6,7 @@ OpenALPR is an open source Automatic License Plate Recognition library written i
 Binaries
 -----------
 
-Pre-compiled Windows binaries can be downloaded on the [releases](https://github.com/openalpr/openalpr/releases) page
+Pre-compiled Windows binaries can be downloaded on the [releases](https://github.com/openalpr/openalpr/releases) page. Please use [Wiki](https://github.com/openalpr/openalpr/wiki) for compilation instructions.
 
 Installation
 ---------------
@@ -14,7 +14,7 @@ Installation
 Install OpenALPR on Ubuntu 16.04 with the following commands:
 
 ```
-sudo apt-get update && sudo apt-get install -y openalpr openalpr-daemon openalpr-utils libopenalpr-dev
+sudo apt-get update && sudo apt-get install openalpr
 ```
 
 OpenALPR requires the following additional libraries:
@@ -31,15 +31,21 @@ User Guide
 
 OpenALPR includes a command line utility. Simply typing "alpr [image file path]" is enough to get started recognizing license plate images. This is a License Plate detector with added support for India using Openalpr library.
 
-Testing for recognising Indian Number Plates
+Recognising Indian Number Plates
 ------------------------------------------------
 
-After the installing the opensource version of Openalpr, copy the runtime_data directory contaning configuration files, trained data and pattern files for India in the runtime directory :
+After the installing the opensource version of Openalpr. Clone this openalpr_lic repository in home directory and copy the contents of it to the openalpr installation runtime directory:
 
-If you have installed the openalpr in home directory copy using following command:
+# Clone the latest code from Github
 
 ```
-sudo cp -r ~/openalpr/runtime_data usr/share/openalpr/runtime_data/ 
+git clone https://github.com/abhishekworkspace/openalpr_lic
+```
+
+# Copy the contents of this local repository to openalpr directory
+
+```
+sudo cp -r openalpr_lic/runtime_data/* /usr/share/openalpr/runtime_data/ 
 ```
 
 For example, the following output is created by analyzing this image: 
@@ -49,7 +55,7 @@ Plate Image:
 ![alt text](https://raw.githubusercontent.com/abhishekworkspace/openalpr_lic/master/car.jpg)
 
 ```
-user@linux:~/openalpr$  alpr -c in car.jpg
+user@linux:~/openalpr_lic$  alpr -c in car.jpg
 plate0: 10 results
     - MH01AV8866	 confidence: 89.5252
     - MH01AV88G6	 confidence: 88.0583
@@ -67,7 +73,7 @@ Detailed command line usage
 ---------------------------
 
 ```
-user@linux:~/openalpr$ alpr --help
+user@linux:~/openalpr_lic$ alpr --help
 
 USAGE: 
 
@@ -118,7 +124,7 @@ Where:
    <image_file_path>
      Image containing license plates
 ```
-
+contents of it 
 OpenAlpr Command Line Utility
 --------------------------------
 
@@ -154,7 +160,7 @@ grep -B 2 "$ss" all_reads.txt | head -1
 Documentation
 ----------------
 
-Detailed [Documenation](doc.openalpr.com.) is available. 
+Documenation for building openalpr for any other country is available [here](doc.openalpr.com). 
 
 Training
 -----------
@@ -203,7 +209,7 @@ http://vietocr.sourceforge.net/training.html
 Integrating the Library
 --------------------------
 
-OpenALPR is written in C++ and has bindings in C#, Python, Node.js, Go, and Java. Please see this guide for examples showing how to run OpenALPR in your application: [Bindings](http://doc.openalpr.com/bindings.html)
+OpenALPR is written in C++ and has [bindings](http://doc.openalpr.com/bindings.html) in C#, Python, Node.js, Go, and Java. Please see this guide for examples showing how to run OpenALPR in your application. 
 
 Compiling
 ------------
@@ -216,7 +222,7 @@ Please follow these detailed compilation guides for your respective operating sy
 * [Ubuntu Linux](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(Ubuntu-Linux))
 * [OS X](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(OS-X))
 * [Android Library](https://github.com/SandroMachado/openalpr-android)
-* [Android Application Sample](https://github.com/sujaybhowmick/OpenAlprDroidApp)
+* [Android Application Sample](https://github.com/sujaybhowmick/OpenAlprDroidApp)contents of it 
 * [iOS](https://github.com/twelve17/openalpr-ios)
 * [iOS React Native](https://github.com/cardash/react-native-openalpr)
 * [Xamarin](https://github.com/kevinjpetersen/openalpr-xamarin)
