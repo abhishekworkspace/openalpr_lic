@@ -36,15 +36,14 @@ Recognising Indian Number Plates
 
 After the installing the opensource version of Openalpr. Clone this openalpr_lic repository in home directory and copy the contents of it to the openalpr installation runtime directory:
 
-# Clone the latest code from Github
 
 ```
+# Clone the latest code from Github
+
 git clone https://github.com/abhishekworkspace/openalpr_lic
-```
 
 # Copy the contents of this local repository to openalpr directory
 
-```
 sudo cp -r openalpr_lic/runtime_data/* /usr/share/openalpr/runtime_data/ 
 ```
 
