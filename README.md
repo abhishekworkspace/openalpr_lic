@@ -4,12 +4,12 @@
 OpenALPR is an open source Automatic License Plate Recognition library written in C++ with bindings in C#, Java, Node.js, Go, and Python. The library analyzes images and video streams to identify license plates. The output is the text representation of any license plate characters.
 
 Binaries
------------
+--------
 
 Pre-compiled Windows binaries can be downloaded on the [releases](https://github.com/openalpr/openalpr/releases) page. Please use [Wiki](https://github.com/openalpr/openalpr/wiki) for compilation instructions.
 
 Installation
----------------
+------------
 
 Install OpenALPR on Ubuntu 16.04 with the following commands:
 
@@ -25,14 +25,14 @@ OpenALPR requires the following additional libraries:
 After cloning this GitHub repository, you should download and extract Tesseract and OpenCV source code into their own directories. Compile both libraries.
 
 User Guide
--------------
+----------
 
 
 
 OpenALPR includes a command line utility. Simply typing "alpr [image file path]" is enough to get started recognizing license plate images. This is a License Plate detector with added support for India using Openalpr library.
 
 Recognising Indian Number Plates
-------------------------------------------------
+--------------------------------
 
 After the installing the opensource version of Openalpr. Clone this openalpr_lic repository in home directory and copy the contents of it to the openalpr installation runtime directory:
 
@@ -49,6 +49,7 @@ Plate Image:
 
 ![alt text](https://raw.githubusercontent.com/abhishekworkspace/openalpr_lic/master/car.jpg)
 
+```
 ```
 user@linux:~/openalpr_lic$  alpr -c in car.jpg
 plate0: 10 results
@@ -120,7 +121,7 @@ Where:
      Image containing license plates
 ```
 Using command line arguments for India
---------------------------------
+--------------------------------------
 
 For India you can use the following command:
 
@@ -140,7 +141,7 @@ For recognising the Videos
 >Check out extra test files under resources folder.
 
 Generating output in text files
-----------------------------------
+-------------------------------
 
 ```
 #!/bin/bash
@@ -152,12 +153,12 @@ grep -B 2 "$ss" all_reads.txt | head -1
 ```
 
 Documentation
-----------------
+-------------
 
 Documenation for building openalpr for any other country is available [here](doc.openalpr.com). 
 
 Training
------------
+--------
 
 Detailed documentation for training is available at
 ```
@@ -165,14 +166,14 @@ http://doc.openalpr.com/opensource.html
 ```
 
 Training the detector
-------------------------
+---------------------
 Using the train detector for india
 ```
 https://github.com/loxxy/train-detector
 ```
 
 Training OCR
----------------
+------------
 
 ```
 https://github.com/openalpr/train-ocr
@@ -181,7 +182,7 @@ https://github.com/openalpr/train-ocr
 For Generating trained data file use Tesseract or jTessBoxEditor.
 
 jTessBoxEditor
------------------
+--------------
 
 jTessBoxEditor is a box editor and trainer for Tesseract OCR, providing editing of box data of both Tesseract 2.0x and 3.0x formats and full automation of Tesseract training. It can read images of common image formats, including multi-page TIFF. The program requires Java Runtime Environment 7 or later.
 
@@ -201,12 +202,12 @@ http://vietocr.sourceforge.net/training.html
 >Check out Box and Tiff files for training of OCR and generation of trained data under resources folder.
 
 Integrating the Library
---------------------------
+-----------------------
 
 OpenALPR is written in C++ and has [bindings](http://doc.openalpr.com/bindings.html) in C#, Python, Node.js, Go, and Java. Please see this guide for examples showing how to run OpenALPR in your application. 
 
 Compiling
-------------
+---------
 OpenALPR compiles and runs on Linux, Mac OSX and Windows.
 After cloning this GitHub repository, you should download and extract Tesseract and OpenCV source code into their own directories. Compile both libraries.
 
@@ -223,10 +224,10 @@ Please follow these detailed compilation guides for your respective operating sy
 
 
 Docker
----------
+------
 
 Build docker image
---------------------
+------------------
 
 ```
 docker build -t openalpr https://github.com/openalpr/openalpr.git
@@ -241,7 +242,7 @@ docker run -it --rm -v $(pwd):/data:ro openalpr -c eu h786poj.jpg
 ```
 
 Questions
-------------
+---------
 Please post questions or comments to the *Google group list*: 
 ```
 https://groups.google.com/forum/#!forum/openalpr
