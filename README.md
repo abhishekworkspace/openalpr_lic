@@ -44,12 +44,12 @@ git clone https://github.com/abhishekworkspace/openalpr_lic
 
 # Copy the contents of this repository
 For example, the following output is created by analyzing this image: 
-
+```
 Plate Image:
-
+------------
 ![alt text](https://raw.githubusercontent.com/abhishekworkspace/openalpr_lic/master/car.jpg)
 
-```
+
 ```
 user@linux:~/openalpr_lic$  alpr -c in car.jpg
 plate0: 10 results
